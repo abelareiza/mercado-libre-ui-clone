@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/main.css">
-  <title>Document</title>
+  <script src="https://kit.fontawesome.com/e1167abf4c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <title>Mercado Libre Colombia</title>
 </head>
 <body class="flex flex-col">
   <header class="header flex flex-col px-4 bg-amarillo h-24 justify-around">
@@ -24,7 +27,7 @@
   </div>
   <div class="header__bottom flex px-4 justify-between items-center">
     <div class="header__location">
-      <a href="#">Ingresa tu ubicación</a>
+      <a href="#"><i class="fas fa-map-marker-alt mr-2"></i>Ingresa tu ubicación</a>
     </div>
     <nav class="header__categories flex items-center">
       <select name="categories" id="categories" class="categories mx-2">
@@ -41,10 +44,46 @@
       <a href="#" class="sign-up mx-2">Crea tu cuenta</a>
       <a href="#" class="login mx-2">Ingresa</a>
       <a href="" class="my-shopping mx-2">Mis compras</a>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
     </nav>
   </div>
   </header>
-  <main></main>
-  <footer></footer>
+  <main>
+    <div class="banner">
+      <div class="banner__carousel splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <div class="carousel__image splide__slide">
+              <img src="./assets/carousel_banner_1.jpg" alt="">
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="./assets/carousel_banner_2.jpg" alt="">
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="./assets/carousel_banner_3.jpg" alt="">
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="./assets/carousel_banner_4.jpg" alt="">
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="./assets/carousel_banner_5.jpg" alt="">
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <a href="#" class="footer__option mx-2">Trabaja con nosotros</a>
+      <a href="#" class="footer__option mx-2">Términos y condiciones</a>
+      <a href="#" class="footer__option mx-2">Cómo cuidamos tu privacidad</a>
+      <a href="#" class="footer__option mx-2">Ayuda / PQR</a>
+      <a href="#" class="footer__option mx-2">www.sic.gov.co</a>
+    </nav>
+    <p>Copyright © 1999-2021 MercadoLibre Colombia LTDA.</p>
+    <p>Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</p>
+  </footer>
+  <script src="./splide.js"></script>
 </body>
 </html>
