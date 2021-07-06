@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        amarillo: '#fff159',
-      }
+        amarillo: "#fff159",
+        gris: "#ebebeb",
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
