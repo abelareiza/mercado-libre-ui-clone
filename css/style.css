@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .payment__icon-container {
     @apply w-12 h-12 mr-4 flex justify-center items-center border border-gray-300 rounded-full;
 }
