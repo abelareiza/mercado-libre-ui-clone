@@ -1,2 +1,3 @@
-npx tailwindcss -i ./css/main.css -o ./dist/main.css
-npx tailwindcss -o css/main.css --watch
+npx tailwindcss -i css/style.css -c custom/js/tailwind.config.js -o dist/tailwind.css
+npx tailwindcss -i css/style.css -o dist/tailwind.css
+npx tailwindcss -o dist/tailwind.css --watch

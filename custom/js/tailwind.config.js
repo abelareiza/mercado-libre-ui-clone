@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         amarillo: "#fff159",
         gris: "#ebebeb",
+        azul: "#5796fa",
+        verde: "#00a650",
       },
     },
   },
@@ -13,4 +15,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}

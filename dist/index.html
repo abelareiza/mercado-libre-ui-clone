@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/tailwind.css" />
+  <script src="https://kit.fontawesome.com/e1167abf4c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <title>Mercado Libre Colombia</title>
+</head>
+
+<body class="flex flex-col bg-gris">
+  <!-- Header container -->
+  <header class="header flex flex-col px-4 bg-amarillo h-24 justify-around">
+    <div class="header__top flex justify-between items-center">
+      <div class="header__logo">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/mercado-libre-logo-1536x456.png" alt="Logo"
+          width="134" />
+      </div>
+      <div class="header__search">
+        <input type="text" placeholder="Buscar productos, marcas y más..." class="w-96 p-2" />
+      </div>
+      <div class="header__promo flex">
+        <div class="promo__logo">
+          <img src="https://http2.mlstatic.com/D_NQ_761387-MLA46537447441_062021-OO.jpg" alt="Disney Plus"
+            width="340" />
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom flex px-4 justify-between items-center">
+      <div class="header__location">
+        <a href="#"><i class="fas fa-map-marker-alt mr-2"></i>Ingresa tu ubicación</a>
+      </div>
+      <nav class="header__categories flex items-center">
+        <select name="categories" id="categories" class="categories mx-2">
+          <option value="vehicles">Vehículos</option>
+          <option value="supermarket">Supermercado</option>
+          <option value="technology">Tecnología</option>
+        </select>
+        <a href="#" class="deals mx-2">Ofertas</a>
+        <a href="#" class="history mx-2">Historial</a>
+        <a href="#" class="sell mx-2">Vender</a>
+        <a href="#" class="help mx-2">Ayuda/PQR</a>
+      </nav>
+      <nav class="header__user-options">
+        <a href="#" class="sign-up mx-2">Crea tu cuenta</a>
+        <a href="#" class="login mx-2">Ingresa</a>
+        <a href="" class="my-shopping mx-2">Mis compras</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Carousel banner -->
+    <div class="banner">
+      <div class="banner__carousel splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <div class="carousel__image splide__slide">
+              <img src="/custom/assets/carousel_banner_1.jpg" alt="" />
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="/custom/assets/carousel_banner_2.jpg" alt="" />
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="/custom/assets/carousel_banner_3.jpg" alt="" />
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="/custom/assets/carousel_banner_4.jpg" alt="" />
+            </div>
+            <div class="carousel__image splide__slide">
+              <img src="/custom/assets/carousel_banner_5.jpg" alt="" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Pay methods -->
+    <div class="payment flex flex-col items-center">
+      <div class="pay-methods bg-white flex justify-center mt-8">
+        <!-- Credit card -->
+        <div class="credit-card inline-flex p-4 items-center">
+          <div class="payment__icon-container">
+            <i class="far fa-credit-card text-2xl text-azul"></i>
+          </div>
+          <div class="payment-label flex flex-col">
+            <h3>Hasta 48 cuotas</h3>
+            <a href="#" class="text-azul">Ver más</a>
+          </div>
+        </div>
+        <!-- Bank transfer -->
+        <div class="bank-transfer inline-flex p-4 items-center">
+          <div class="payment__icon-container">
+            <i class="fas fa-university text-2xl text-azul"></i>
+          </div>
+          <div class="payment-label flex flex-col">
+            <h3>Hasta 48 cuotas</h3>
+            <a href="#" class="text-azul">Ver más</a>
+          </div>
+        </div>
+        <!-- PSE -->
+        <div class="pse inline-flex p-4 items-center">
+          <div class="payment__icon-container">
+            <i class="fas fa-money-bill text-2xl text-azul"></i>
+          </div>
+          <div class="payment-label flex flex-col">
+            <h3>Hasta 48 cuotas</h3>
+            <a href="#" class="text-azul">Ver más</a>
+          </div>
+        </div>
+        <!-- More methods -->
+        <div class="more-methods inline-flex p-4 items-center">
+          <div class="payment__icon-container">
+            <i class="fas fa-plus-circle text-2xl text-azul"></i>
+          </div>
+          <div class="payment-label flex flex-col">
+            <h3>Hasta 48 cuotas</h3>
+            <a href="#" class="text-azul">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ofertas -->
+    <section class="flex flex-col mt-8 px-4">
+      <div class="flex items-end mx-4 py-4">
+        <h3 class="text-2xl font-light">Ofertas</h3>
+        <a href="#" class="text-azul ml-4 font-light">Ver todas</a>
+      </div>
+      <div class="flex">
+        <div class="bg-white mx-4">
+          <div>
+            <img src="https://http2.mlstatic.com/D_Q_NP_2X_894538-MCO46375065506_062021-AB.webp" alt="" class="w-72">
+          </div>
+          <div class="border-t p-4 pb-8 border-gray-300">
+            <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">249.950</strong> 16% OFF</p>
+            <p class="text-xs text-verde">Envío gratis</p>
+          </div>
+        </div>
+        <div class="bg-white mx-4">
+          <div>
+            <img src="https://http2.mlstatic.com/D_Q_NP_2X_894538-MCO46375065506_062021-AB.webp" alt="" class="w-72">
+          </div>
+          <div class="border-t p-4 pb-8 border-gray-300">
+            <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">249.950</strong> 16% OFF</p>
+            <p class="text-xs text-verde">Envío gratis</p>
+          </div>
+        </div>
+        <div class="bg-white mx-4">
+          <div>
+            <img src="https://http2.mlstatic.com/D_Q_NP_2X_894538-MCO46375065506_062021-AB.webp" alt="" class="w-72">
+          </div>
+          <div class="border-t p-4 pb-8 border-gray-300">
+            <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">249.950</strong> 16% OFF</p>
+            <p class="text-xs text-verde">Envío gratis</p>
+          </div>
+        </div>
+        <div class="bg-white mx-4">
+          <div>
+            <img src="https://http2.mlstatic.com/D_Q_NP_2X_894538-MCO46375065506_062021-AB.webp" alt="" class="w-72">
+          </div>
+          <div class="border-t p-4 pb-8 border-gray-300">
+            <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">249.950</strong> 16% OFF</p>
+            <p class="text-xs text-verde">Envío gratis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="#" class="footer__option mx-2">Trabaja con nosotros</a>
+      <a href="#" class="footer__option mx-2">Términos y condiciones</a>
+      <a href="#" class="footer__option mx-2">Cómo cuidamos tu privacidad</a>
+      <a href="#" class="footer__option mx-2">Ayuda / PQR</a>
+      <a href="#" class="footer__option mx-2">www.sic.gov.co</a>
+    </nav>
+    <p>Copyright © 1999-2021 MercadoLibre Colombia LTDA.</p>
+    <p>Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</p>
+  </footer>
+  <script src="/custom/js/splide.js"></script>
+</body>
+
+</html>
