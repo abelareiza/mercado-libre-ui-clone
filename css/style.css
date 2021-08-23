@@ -5,3 +5,11 @@
 .payment__icon-container {
     @apply w-12 h-12 mr-4 flex justify-center items-center border border-gray-300 rounded-full;
 }
+
+.categories__item {
+    @apply group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer;
+}
+
+.product__card {
+    @apply bg-white m-4 cursor-pointer;
+}

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/dist/tailwind.css" />
+  <link rel="icon" type="image/png" href="https://onlinefestival.women-in-technology.com/hubfs/Mercado%20Libre%20Logo.png">
   <script src="https://kit.fontawesome.com/e1167abf4c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -16,15 +17,15 @@
   <!-- Header container -->
   <header class="flex flex-col bg-amarillo h-auto text-gris3">
     <div class="max-w-screen-xl mx-auto w-full px-4">
-      <div class="flex py-2 justify-between">
-        <div>
+      <div class="flex flex-wrap md:flex-nowrap p-4 md:py-2 justify-evenly md:justify-between">
+        <a href="#">
           <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/mercado-libre-logo-1536x456.png"
             alt="Logo" width="134" />
-        </div>
+        </a>
         <div class="">
-          <input type="text" placeholder="Buscar productos, marcas y más..." class="w-96 p-2" />
+          <input type="text" placeholder="Buscar productos, marcas y más..." class="w-64 md:w-72 lg:w-96 p-2" />
         </div>
-        <div class="flex">
+        <div class="flex mt-4 md:mt-0">
           <a href="#" class="flex items-center font-light"><i class="fas fa-bolt pr-4 text-3xl"></i>Envíos que te llegan
             más
             rápido</a>
@@ -34,14 +35,14 @@
         <div class="header__location">
           <a href="#" class="text-sm"><i class="fas fa-map-marker-alt mr-2"></i>Ingresa tu ubicación</a>
         </div>
-        <nav class="header__categories flex items-center text-sm opacity-60">
+        <nav class="header__categories flex flex-wrap justify-center items-center text-sm opacity-60">
           <a href="#" class="mx-2">Categorías</a>
           <a href="#" class="mx-2">Ofertas</a>
           <a href="#" class="mx-2">Historial</a>
           <a href="#" class="mx-2">Vender</a>
           <a href="#" class="mx-2">Ayuda/PQR</a>
         </nav>
-        <nav class="header__user-options text-sm">
+        <nav class="header__user-options flex flex-wrap justify-center items-center text-sm">
           <a href="#" class="mr-2 opacity-60">Crea tu cuenta</a>
           <a href="#" class="mx-2 opacity-60">Ingresa</a>
           <a href="" class="mx-2 opacity-60">Mis compras</a>
@@ -77,9 +78,9 @@
     </div>
     <div class="max-w-screen-xl mx-auto">
       <!-- Pay methods -->
-      <div class="bg-white flex justify-evenly mt-8 rounded">
+      <div class="bg-white grid gap-px grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 justify-items-center sm:justify-items-center">
         <!-- Credit card -->
-        <div class="credit-card inline-flex p-4 items-center">
+        <div class="credit-card w-80 sm:w-auto inline-flex p-4 items-center">
           <div class="payment__icon-container">
             <i class="far fa-credit-card text-2xl text-azul"></i>
           </div>
@@ -89,7 +90,7 @@
           </div>
         </div>
         <!-- Bank transfer -->
-        <div class="bank-transfer inline-flex p-4 items-center">
+        <div class="bank-transfer w-80 sm:w-auto inline-flex p-4 items-center">
           <div class="payment__icon-container">
             <i class="fas fa-university text-2xl text-azul"></i>
           </div>
@@ -99,7 +100,7 @@
           </div>
         </div>
         <!-- PSE -->
-        <div class="pse inline-flex p-4 items-center">
+        <div class="pse w-80 sm:w-auto inline-flex p-4 items-center">
           <div class="payment__icon-container">
             <i class="fas fa-money-bill text-2xl text-azul"></i>
           </div>
@@ -109,7 +110,7 @@
           </div>
         </div>
         <!-- More methods -->
-        <div class="more-methods inline-flex p-4 items-center">
+        <div class="more-methods w-80 sm:w-auto inline-flex p-4 items-center">
           <div class="payment__icon-container">
             <i class="fas fa-plus-circle text-2xl text-azul"></i>
           </div>
@@ -121,56 +122,56 @@
       </div>
       <!-- Deals -->
       <section class="flex flex-col mt-8 px-4">
-        <div class="flex items-end mx-4 py-4">
+        <div class="flex justify-center lg:justify-start items-end mx-4 py-4">
           <h3 class="text-2xl font-light">Ofertas</h3>
           <a href="#" class="text-azul ml-4 font-light">Ver todas</a>
         </div>
-        <div class="flex">
-          <div class="bg-white mx-4 cursor-pointer">
+        <div class="flex flex-wrap justify-center lg:flex-nowrap">
+          <div class="product__card">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_962057-MCO44773036949_022021-AB.webp" alt="" class="w-72">
             </div>
             <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">2.499.000</strong> 16% OFF
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 2.499.000</strong> 16% OFF
               </p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="bg-white mx-4 cursor-pointer">
+          <div class="product__card">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_896936-MCO31706356846_082019-AB.webp" alt="" class="w-72">
             </div>
             <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">149.950</strong> 30% OFF</p>
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 149.950</strong> 30% OFF</p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="bg-white mx-4 cursor-pointer">
+          <div class="product__card">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_609926-MCO46332066274_062021-AB.webp" alt="" class="w-72">
             </div>
             <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">3.849.500</strong> 12% OFF
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 3.849.500</strong> 12% OFF
               </p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="bg-white mx-4 cursor-pointer">
+          <div class="product__card">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_756344-MCO44890055635_022021-AB.webp" alt="" class="w-72">
             </div>
             <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">4.249.000</strong> 20% OFF
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 4.249.000</strong> 20% OFF
               </p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="bg-white mx-4 cursor-pointer">
+          <div class="product__card">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_972289-MLA45731767655_042021-AB.webp" alt="" class="w-72">
             </div>
             <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">3.378.700</strong> 15% OFF
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 3.378.700</strong> 15% OFF
               </p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
@@ -179,85 +180,85 @@
       </section>
       <!-- Discover -->
       <section class="flex flex-col mt-8 px-4">
-        <div class="flex items-end mx-4 py-4">
+        <div class="flex justify-center lg:justify-start items-end mx-4 py-4">
           <h3 class="text-2xl font-light">Descubre</h3>
         </div>
         <div class="flex">
-          <div class="flex bg-white mx-4 w-1/2 cursor-pointer">
+          <div class="flex flex-col-reverse lg:flex-row bg-white mx-1 sm:mx-2 md:mx-4 p-4 w-1/2 cursor-pointer">
             <div class="flex flex-col p-8 justify-center">
               <h4 class="tracking-wider text-xs mb-2">ELECTRODOMÉSTICOS</h4>
-              <p class="font-medium text-2xl tracking-wide mb-2 w-1/2">TODO EN REFRIGERACIÓN</p>
+              <p class="font-medium text-2xl tracking-wide mb-2 w-3/4 lg:w-1/2">TODO EN REFRIGERACIÓN</p>
               <button class="p-2 bg-azul text-white text-sm w-24">Ver más</button>
             </div>
-            <div>
-              <img src="https://http2.mlstatic.com/D_NQ_973701-MLA46785954585_072021-C.webp" alt="" class="h-64">
+            <div class="flex items-center">
+              <img src="https://http2.mlstatic.com/D_NQ_973701-MLA46785954585_072021-C.webp" alt="" class="lg:w-72">
             </div>
           </div>
-          <div class="flex bg-white mx-4 w-1/2 cursor-pointer">
+          <div class="flex flex-col-reverse lg:flex-row bg-white mx-1 sm:mx-2 md:mx-4 p-4 w-1/2 cursor-pointer">
             <div class="flex flex-col p-8 justify-center">
               <h4 class="tracking-wider text-xs mb-2">DORMITORIO</h4>
-              <p class="font-medium text-2xl tracking-wide mb-2 w-1/2">COLCHONES Y TEXTILES</p>
+              <p class="font-medium text-2xl tracking-wide mb-2 w-3/4 lg:w-1/2">COLCHONES Y TEXTILES</p>
               <button class="p-2 bg-azul text-white text-sm w-24">Ver más</button>
             </div>
-            <div>
-              <img src="https://http2.mlstatic.com/D_NQ_822682-MLA46785843826_072021-C.webp" alt="" class="h-64">
+            <div class="flex items-center">
+              <img src="https://http2.mlstatic.com/D_NQ_822682-MLA46785843826_072021-C.webp" alt="" class="lg:w-72">
             </div>
           </div>
         </div>
       </section>
       <!-- Popular categories -->
       <section class="flex flex-col mt-8 px-4">
-        <div class="flex items-end mx-4 py-4">
+        <div class="flex items-end justify-center lg:justify-start mx-4 py-4">
           <h3 class="text-2xl font-light">Categorías populares</h3>
         </div>
-        <div class="grid grid-cols-5 grid-rows-2 gap-px">
+        <div class="grid gap-px grid-cols-2 grid-rows-5 sm:grid-cols-3 sm:grid-rows-4 md:grid-cols-4 md:grid-rows-3 lg:grid-cols-5 lg:grid-rows-2">
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-car text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Carros, Motos y Otros</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-desktop text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Computación</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-tshirt text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Ropa y Accesorios</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-couch text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Hogar y Muebles</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-microphone text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Electrónica, Audio y Video</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-blender text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Electrodomésticos</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-mobile-alt text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Celulares y Teléfonos</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-futbol text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Deportes y Fitness</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-gamepad text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Consolas y Videojuegos</p>
           </div>
           <div
-            class="group flex flex-col justify-center items-center bg-white w-auto h-48 hover:bg-azul cursor-pointer">
+            class="categories__item">
             <i class="fas fa-guitar text-azul text-5xl group-hover:text-white"></i>
             <p class="text-gris3 text-sm font-light mt-2 group-hover:text-white">Instrumentos Musicales</p>
           </div>
