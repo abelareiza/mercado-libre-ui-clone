@@ -1,5 +1,5 @@
 new Splide( '.splide', {
     autoplay: true,
 	type   : 'loop',
-    drag: false,
+    drag: true,
 } ).mount();
