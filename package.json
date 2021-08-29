@@ -1,7 +1,30 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
+    "autoprefixer": "^10.3.3",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
-  }
+    "tailwindcss": "^2.2.8"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "postcss-cli": "^8.3.1"
+  },
+  "name": "mercadolibre",
+  "description": "*⚠️ Project under development 🌱*",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "TAILWIND_MODE=watch postcss ./dist/tailwind.css -o ./css/styles.css -w --verbose",
+    "prod": "NODE_ENV=production postcss ./dist/tailwind.css -o ./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abelareiza/mercado-libre-ui-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abelareiza/mercado-libre-ui-clone/issues"
+  },
+  "homepage": "https://github.com/abelareiza/mercado-libre-ui-clone#readme"
 }
