@@ -17,4 +17,6 @@ Libraries and technologies used for this project:
 
 
 ## Preview:
-![enter image description here](https://github.com/abelareiza/mercado-libre-ui-clone/blob/master/custom/assets/mockup/ML%20UI%20Clone%20GIF.gif?raw=true)
+
+![enter image description here](https://raw.githubusercontent.com/abelareiza/mercado-libre-ui-clone/master/custom/assets/mockup/mobile-mockup.gif?raw=true)
+![enter image description here](https://raw.githubusercontent.com/abelareiza/mercado-libre-ui-clone/master/custom/assets/mockup/desktop-mockup.png?raw=true)
