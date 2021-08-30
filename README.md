@@ -1,6 +1,6 @@
 # Mercado Libre UI Clone
 
-*⚠️ Project under development 🌱*
+*⚠️ Now you can check this project at [mercadolibre-abel.surge.sh] (https://mercadolibre-abel.surge.sh) *
 
 Small project developed in order to apply and practice the TailwindCSS framework and take advantage of its included functionalities to obtain a fast, clean and responsive layout.
 
