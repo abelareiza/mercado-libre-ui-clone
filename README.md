@@ -20,3 +20,8 @@ Libraries and technologies used for this project:
 
 ![enter image description here](https://raw.githubusercontent.com/abelareiza/mercado-libre-ui-clone/master/custom/assets/mockup/mobile-mockup.gif?raw=true)
 ![enter image description here](https://raw.githubusercontent.com/abelareiza/mercado-libre-ui-clone/master/custom/assets/mockup/desktop-mockup.png?raw=true)
+
+
+[<img src='https://img.icons8.com/color/48/000000/github--v1.png' alt='github' height='40'>](https://github.com/abelareiza)
+[<img src='https://img.icons8.com/color/48/000000/linkedin.png' alt='linkedin' height='40'>](https://www.linkedin.com/in/abelareiza)
+[<img src='https://img.icons8.com/color/48/000000/twitter--v1.png' alt='twitter' height='40'>](https://twitter.com/Enjuavel) 
