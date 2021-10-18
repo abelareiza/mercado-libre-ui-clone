@@ -7,9 +7,9 @@
 }
 
 .categories__item {
-    @apply flex flex-col justify-center items-center bg-white w-auto h-48 px-4 text-center hover:bg-azul cursor-pointer;
+    @apply flex flex-col justify-center items-center bg-white w-auto h-48 px-4 text-center hover:bg-azul cursor-pointer transition;
 }
 
 .product__card {
-    @apply bg-white m-4 cursor-pointer;
+    @apply bg-white cursor-pointer transition;
 }

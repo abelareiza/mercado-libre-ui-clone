@@ -15,9 +15,9 @@
 
 <body class="flex flex-col bg-gris">
   <!-- Header container -->
-  <header class="flex flex-col bg-amarillo h-auto text-gris3 pt-8 sm:pt-4 md:pt-2 lg:pt-0">
+  <header class="bg-amarillo flex flex-col h-auto text-gris3 pt-8 sm:pt-4 md:pt-2 lg:pt-0">
     <div class="max-w-screen-xl mx-auto w-full px-4">
-      <div class="flex flex-wrap md:flex-nowrap p-4 md:py-2 justify-evenly md:justify-between">
+      <div class="flex flex-wrap md:flex-nowrap py-4 md:py-2 justify-evenly md:justify-between">
         <a href="#" class="mb-4 sm:mb-0">
           <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/09/mercado-libre-logo-1536x456.png"
             alt="Logo" width="134" />
@@ -54,7 +54,7 @@
   <main>
     <!-- Carousel banner -->
     <div class="banner">
-      <div class="splide max-w-[1600px] mx-auto mb-10">
+      <div class="splide max-w-[1600px] mx-auto">
         <div class="splide__track">
           <ul class="splide__list">
             <div class="splide__slide h-64 lg:h-[340px]">
@@ -76,68 +76,80 @@
         </div>
       </div>
     </div>
-    <div class="max-w-screen-xl mx-auto">
-      <!-- Pay methods -->
-      <div class="bg-white w-max lg:w-auto mx-auto lg:px-4 grid gap-px grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 justify-items-center sm:justify-items-start lg:justify-items-center">
-        <!-- Credit card -->
-        <div class="credit-card w-80 sm:w-auto inline-flex p-4 items-center">
-          <div class="payment__icon-container">
-            <i class="far fa-credit-card text-2xl text-azul"></i>
-          </div>
-          <div class="payment-label flex flex-col">
-            <h3>Hasta 48 cuotas</h3>
-            <a href="#" class="text-azul">Ver más</a>
-          </div>
-        </div>
-        <!-- Bank transfer -->
-        <div class="bank-transfer w-80 sm:w-auto inline-flex p-4 items-center">
-          <div class="payment__icon-container">
-            <i class="fas fa-university text-2xl text-azul"></i>
-          </div>
-          <div class="payment-label flex flex-col">
-            <h3>Transferencia desde tu banco</h3>
-            <a href="#" class="text-azul">Ver más</a>
-          </div>
-        </div>
-        <!-- PSE -->
-        <div class="pse w-80 sm:w-auto inline-flex p-4 items-center">
-          <div class="payment__icon-container">
-            <i class="fas fa-money-bill text-2xl text-azul"></i>
-          </div>
-          <div class="payment-label flex flex-col">
-            <h3>Paga en efectivo</h3>
-            <a href="#" class="text-azul">Ver más</a>
-          </div>
-        </div>
-        <!-- More methods -->
-        <div class="more-methods w-80 sm:w-auto inline-flex p-4 items-center">
-          <div class="payment__icon-container">
-            <i class="fas fa-plus-circle text-2xl text-azul"></i>
-          </div>
-          <div class="payment-label flex flex-col">
-            <h3>Más medios de pago</h3>
-            <a href="#" class="text-azul">Ver más</a>
-          </div>
-        </div>
-      </div>
-      <!-- Deals -->
-      <section class="flex flex-col mt-8 px-4">
-        <div class="flex justify-center lg:justify-start items-end mx-4 py-4">
-          <h3 class="text-2xl font-light">Ofertas</h3>
-          <a href="#" class="text-azul ml-4 font-light">Ver todas</a>
-        </div>
-        <div class="flex flex-wrap justify-center lg:flex-nowrap">
-          <div class="product__card">
-            <div>
-              <img src="https://http2.mlstatic.com/D_Q_NP_2X_962057-MCO44773036949_022021-AB.webp" alt="" class="w-72">
+    <div class="max-w-screen-xl mx-auto w-full">
+      <!-- Pay methods section -->
+      <div class="w-max px-4 mt-8 mx-auto lg:w-auto grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 justify-items-stretch">
+        <!-- <div class="bg-white"> -->
+          <!-- Credit card -->
+          <div class="credit-card bg-white w-80 justify-center sm:w-auto inline-flex p-4 items-center">
+            <div class="payment__icon-container">
+              <i class="far fa-credit-card text-2xl text-azul"></i>
             </div>
-            <div class="border-t p-4 pb-8 border-gray-300">
-              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 2.499.000</strong> 16% OFF
+            <div class="payment-label flex flex-col">
+              <h3>Hasta 48 cuotas</h3>
+              <a href="#" class="text-azul">Ver más</a>
+            </div>
+          </div>
+          <!-- Bank transfer -->
+          <div class="bank-transfer bg-white w-80 justify-center sm:w-auto inline-flex p-4 items-center">
+            <div class="payment__icon-container">
+              <i class="fas fa-university text-2xl text-azul"></i>
+            </div>
+            <div class="payment-label flex flex-col">
+              <h3>Transferencia bancaria</h3>
+              <a href="#" class="text-azul">Ver más</a>
+            </div>
+          </div>
+          <!-- PSE -->
+          <div class="pse bg-white w-80 justify-center sm:w-auto inline-flex p-4 items-center">
+            <div class="payment__icon-container">
+              <i class="fas fa-money-bill text-2xl text-azul"></i>
+            </div>
+            <div class="payment-label flex flex-col">
+              <h3>Paga en efectivo</h3>
+              <a href="#" class="text-azul">Ver más</a>
+            </div>
+          </div>
+          <!-- More methods -->
+          <div class="more-methods bg-white w-80 justify-center sm:w-auto inline-flex p-4 items-center lg:border-l-2">
+            <div class="payment__icon-container">
+              <i class="fas fa-plus-circle text-2xl text-azul"></i>
+            </div>
+            <div class="payment-label flex flex-col">
+              <h3>Más medios de pago</h3>
+              <a href="#" class="text-azul">Ver más</a>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+        <!-- Deals section -->
+        <section class="flex flex-col mt-8 px-4">
+          <div class="flex justify-center lg:justify-start items-end mx-4 py-4">
+            <h3 class="text-2xl font-light">Ofertas</h3>
+            <a href="#" class="text-azul ml-4 font-light">Ver todas</a>
+          </div>
+          <div class="flex gap-4 flex-wrap justify-center lg:flex-nowrap">
+            <div class="product__card hover:drop-shadow-lg">
+              <div>
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_962057-MCO44773036949_022021-AB.webp" alt="" class="w-72">
+              </div>
+              <div class="border-t p-4 pb-8 border-gray-300">
+                <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 2.499.000</strong> 16% OFF
               </p>
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="product__card">
+          <div class="product__card hover:drop-shadow-lg">
+            <div>
+              <img src="https://www.mac-center.com/ccstore/v1/images/?source=/file/v8240265805845502920/products/iPad_mini_Wi-Fi_Space_Gray_PDP%201.jpg" alt="" class="w-72">
+            </div>
+            <div class="border-t p-4 pb-8 border-gray-300">
+              <p class="text-verde text-sm"><strong class="text-black text-lg font-normal">$ 2.749.000</strong> 8% OFF
+              </p>
+              <p class="text-xs text-verde">Envío gratis</p>
+            </div>
+          </div>
+          <div class="product__card hover:drop-shadow-lg">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_896936-MCO31706356846_082019-AB.webp" alt="" class="w-72">
             </div>
@@ -146,7 +158,7 @@
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="product__card">
+          <div class="product__card hover:drop-shadow-lg">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_609926-MCO46332066274_062021-AB.webp" alt="" class="w-72">
             </div>
@@ -156,7 +168,7 @@
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="product__card">
+          <div class="product__card hover:drop-shadow-lg">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_756344-MCO44890055635_022021-AB.webp" alt="" class="w-72">
             </div>
@@ -166,7 +178,7 @@
               <p class="text-xs text-verde">Envío gratis</p>
             </div>
           </div>
-          <div class="product__card">
+          <div class="product__card hover:drop-shadow-lg">
             <div>
               <img src="https://http2.mlstatic.com/D_Q_NP_2X_972289-MLA45731767655_042021-AB.webp" alt="" class="w-72">
             </div>
@@ -178,27 +190,27 @@
           </div>
         </div>
       </section>
-      <!-- Discover -->
+      <!-- Discover section -->
       <section class="flex flex-col mt-8 px-4">
         <div class="flex justify-center lg:justify-start items-end mx-4 py-4">
           <h3 class="text-2xl font-light">Descubre</h3>
         </div>
-        <div class="flex">
-          <div class="flex flex-col-reverse lg:flex-row bg-white mx-1 sm:mx-2 md:mx-4 p-4 w-1/2 cursor-pointer">
+        <div class="flex gap-x-4">
+          <div class="flex flex-col-reverse lg:flex-row bg-white py-4 w-1/2 cursor-pointer hover:drop-shadow-lg transition">
             <div class="flex flex-col p-2 sm:p-4 md:p-8 justify-center">
               <h4 class="tracking-wider text-xs mb-2">ELECTRODOMÉSTICOS</h4>
               <p class="font-medium text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide mb-2 w-3/4 lg:w-1/2">TODO EN REFRIGERACIÓN</p>
-              <button class="p-2 bg-azul text-white text-sm w-24">Ver más</button>
+              <button class="p-2 bg-azul text-white text-sm w-24 transition">Ver más</button>
             </div>
             <div class="flex justify-center items-center">
               <img src="https://http2.mlstatic.com/D_NQ_973701-MLA46785954585_072021-C.webp" alt="" class="w-32 sm:w-48 md:w-64 lg:w-72">
             </div>
           </div>
-          <div class="flex flex-col-reverse lg:flex-row bg-white mx-1 sm:mx-2 md:mx-4 p-4 w-1/2 cursor-pointer">
+          <div class="flex flex-col-reverse lg:flex-row bg-white py-4 w-1/2 cursor-pointer hover:drop-shadow-lg transition">
             <div class="flex flex-col p-2 sm:p-4 md:p-8 justify-center">
               <h4 class="tracking-wider text-xs mb-2">DORMITORIO</h4>
               <p class="font-medium text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide mb-2 w-3/4 lg:w-1/2">COLCHONES Y TEXTILES</p>
-              <button class="p-2 bg-azul text-white text-sm w-24">Ver más</button>
+              <button class="p-2 bg-azul text-white text-sm w-24 transition">Ver más</button>
             </div>
             <div class="flex justify-center items-center">
               <img src="https://http2.mlstatic.com/D_NQ_822682-MLA46785843826_072021-C.webp" alt="" class="w-32 sm:w-48 md:w-64 lg:w-72">
@@ -266,17 +278,20 @@
       </section>
   </main>
   </div>
-  <footer class="flex flex-col bg-white mt-8 p-4">
-    <nav class="flex flex-wrap mb-2">
-      <a href="#" class="mr-4 text-sm">Trabaja con nosotros</a>
-      <a href="#" class="mr-4 text-sm">Términos y condiciones</a>
-      <a href="#" class="mr-4 text-sm">Cómo cuidamos tu privacidad</a>
-      <a href="#" class="mr-4 text-sm">Ayuda / PQR</a>
-      <a href="#" class="mr-4 text-sm">www.sic.gov.co</a>
-    </nav>
-    <div class="">
-      <p class="text-xs text-gris2 font-light mb-1">Copyright © 1999-2021 MercadoLibre Colombia LTDA.</p>
-      <p class="text-xs text-gris2 font-light">Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</p>
+  <!-- Footer -->
+  <footer class="flex flex-col bg-white mt-8">
+    <div class="max-w-screen-xl mx-auto w-full p-4">
+      <nav class="flex flex-wrap mb-2">
+        <a href="#" class="mr-4 text-sm">Trabaja con nosotros</a>
+        <a href="#" class="mr-4 text-sm">Términos y condiciones</a>
+        <a href="#" class="mr-4 text-sm">Cómo cuidamos tu privacidad</a>
+        <a href="#" class="mr-4 text-sm">Ayuda / PQR</a>
+        <a href="#" class="mr-4 text-sm">www.sic.gov.co</a>
+      </nav>
+      <div>
+        <p class="text-xs text-gris2 font-light mb-1">Copyright © 1999-2021 MercadoLibre Colombia LTDA.</p>
+        <p class="text-xs text-gris2 font-light">Carrera 17 Numero 93 - 09 Piso 3, Bogotá D.C., Colombia</p>
+      </div>
     </div>
   </footer>
   <script src="/custom/js/splide.js"></script>
