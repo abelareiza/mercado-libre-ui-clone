@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .payment__icon-container {
-    @apply w-12 h-12 mr-4 flex justify-center items-center border border-gray-300 rounded-full;
+  @apply w-12 h-12 mr-4 flex justify-center items-center border border-gray-300 rounded-full;
 }
 
 .categories__item {
-    @apply flex flex-col justify-center items-center bg-white w-auto h-48 px-4 text-center hover:bg-azul cursor-pointer transition;
+  @apply flex flex-col justify-center items-center bg-white w-auto h-48 px-4 text-center hover:bg-ml-blue cursor-pointer transition;
 }
 
 .product__card {
-    @apply bg-white cursor-pointer transition;
+  @apply flex flex-col items-center bg-white cursor-pointer transition;
 }
