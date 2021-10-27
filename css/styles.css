@@ -975,10 +975,6 @@ video {
 		grid-template-rows: repeat(4, minmax(0, 1fr));
 	}
 
-	.sm\:p-4 {
-		padding: 1rem;
-	}
-
 	.sm\:pt-4 {
 		padding-top: 1rem;
 	}
